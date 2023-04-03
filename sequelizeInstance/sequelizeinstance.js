@@ -1,8 +1,8 @@
 const { Sequelize } = require('sequelize');
 
 
-const sequelize = new Sequelize('new_db', 'root', 'madhu', {
-  host: 'localhost',
+const sequelize = new Sequelize('seneca_project', 'madhukar_1522', 'Madhukar@6143', {
+  host: 'db4free.net',
   dialect: 'mysql',
   define: {
     timestamps: false // Disable createdAt and updatedAt columns

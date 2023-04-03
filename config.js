@@ -1,12 +1,12 @@
-
 const config = {
   db: {
-      host: "localhost",
-      user: "root",
-      password: "madhu",
-      database: "new_db",
-    }
+    host: 'db4free.net',
+    user: 'madhukar_1522',
+    password: 'Madhukar@6143',
+    database: 'seneca_project',
+    port: 3306
   }
+};
     module.exports = config;
   
   
@@ -30,4 +30,14 @@ const config = {
         port: 3306
       }
     };
+
+
+
+     db: {
+      host: "localhost",
+      user: "root",
+      password: "madhu",
+      database: "new_db",
+    }
+  }
     */

@@ -4,13 +4,13 @@ const secretKey = process.env.SECRET_KEY;
 
 const authMiddleware = async (req, res, next) => {
   try {
-//     const token = req.headers.authorization.split(' ')[1];
-// console.log(token)
-//     // Verify the token using the secret key
-//     const decoded = await jwt.verify(token, secretKey);
+   const token = req.headers.authorization.split(' ')[1];
 
-//     // Add the decoded user information to the request object
-//     req.user = decoded;
+    // Verify the token using the secret key
+  const decoded = await jwt.verify(token, secretKey);
+
+   // Add the decoded user information to the request object
+   req.user = decoded;
     // Call the next middleware function
     next();
   } catch (err) {
